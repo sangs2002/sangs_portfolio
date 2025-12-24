@@ -20,6 +20,41 @@ function ContactForm() {
       setError({ ...error, required: false });
     }
   };
+  
+  const Contact = () => {
+const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_qzmiwgn', 'template_h2szoek', form.current, {
+        publicKey: 'tezeJE9PhqYpwArAv',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+
+return <StyledcontactForm>
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="name" />
+      <label>Email</label>
+      <input type="email" name="Email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+</StyledcontactForm>
+  };
+
 
   const handleSendMail = async (e) => {
     e.preventDefault();
@@ -54,6 +89,7 @@ function ContactForm() {
   };
 
   return (
+    
     <div>
       <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">Contact with me</p>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
