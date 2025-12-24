@@ -1,6 +1,3 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
 
 ---
 
@@ -155,15 +152,15 @@ export const personalData = {
   profile: "/Sangs.png",
   designation: "Full-Stack Software Developer",
   description: "My name is SANGEETH....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
+  email: "sangeeth9150@gmail.com",
+  phone: "+9360767391",
+  address: "TamilNadu, India",
+  github: "https://github.com/sangs2002",
+  linkedIn: "https://www.linkedin.com/in/sangeeth-s9150/",
   twitter: "https://x.com/_Sangs_2002",
-  hackerranl :"https://www.hackerrank.com/profile/sangeeth9150",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
+  hackerrank :"https://www.hackerrank.com/profile/sangeeth9150",
+  leetcode: "https://leetcode.com/u/sangeeth9150/",
+  devUsername: "sangeeth9150",
   resume: "...",
 };
 ```

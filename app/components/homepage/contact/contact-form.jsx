@@ -21,39 +21,40 @@ function ContactForm() {
     }
   };
   
-  const Contact = () => {
-const form = useRef();
+//   const Contact = () => {
+// const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-    emailjs
-      .sendForm('service_qzmiwgn', 'template_h2szoek', form.current, {
-        publicKey: 'tezeJE9PhqYpwArAv',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+//     emailjs
+//       .sendForm('service_qzmiwgn', 'template_h2szoek', form.current, {
+//         publicKey: 'tezeJE9PhqYpwArAv',
+//       })
+//       .then(
+//         () => {
+//           console.log('SUCCESS!');
+//         },
+//         (error) => {
+//           console.log('FAILED...', error.text);
+//         },
+//       );
+//   };
 
 
-return <StyledcontactForm>
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="Email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-</StyledcontactForm>
-  };
+// // return <StyledcontactForm>
+// //     <form ref={form} onSubmit={sendEmail}>
+// //       <label>Name</label>
+// //       <input type="text" name="name" />
+// //       <label>Email</label>
+// //       <input type="email" name="Email" />
+// //       <label>Message</label>
+// //       <textarea name="message" />
+// //       <input type="submit" value="Send" />
+// //     </form>
+// // </StyledcontactForm>
+// }
+;
 
 
   const handleSendMail = async (e) => {
