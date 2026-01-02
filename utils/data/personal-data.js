@@ -12,5 +12,5 @@ export const personalData = {
    HackerRank:'https://www.hackerrank.com/profile/sangeeth9150',
   leetcode: "https://leetcode.com/u/sangeeth9150/",
   devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1WWVdwBbtbYTqwAPX7V8kZAYq8VcJkmwB/view?usp=drive_link"
+  resume: "https://drive.google.com/file/d/1ZoFIQNY3V3iZodelonRm1AUBxDzgbSgT/view?usp=drive_link"
 }
